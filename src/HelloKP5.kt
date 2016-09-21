@@ -1,6 +1,7 @@
 fun setup(){
-    var c = createCanvas(700.00, 400.0)
+    var c = createCanvas(windowWidth, windowHeight)
     c.parent("myContainer")
+    c.style("width:100%; height:100%")
 }
 
 fun draw(){
@@ -26,6 +27,6 @@ fun drawText(){
     noStroke()
     textSize(100.0)
     textFont("Segoe UI")
-    text("p5.js + kotlin", 80.0, 190.0)
+    text("p5.js + kotlin", 50.0, 100.0)
 }
 
