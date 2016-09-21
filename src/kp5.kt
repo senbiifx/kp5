@@ -1,9 +1,10 @@
 /**
  * ------------------------------
- * Canvas
+ * Rendering
  * ------------------------------
  */
-@native fun createCanvas(w: Double, h: Double): Unit = noImpl
+
+@native fun createCanvas(w: Double, h: Double): dynamic = noImpl
 
 
 /**

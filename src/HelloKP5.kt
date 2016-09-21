@@ -1,8 +1,6 @@
-import kotlin.browser.document
-
-
 fun setup(){
-    createCanvas(700.00, 400.0)
+    var c = createCanvas(700.00, 400.0)
+    c.parent("myContainer")
 }
 
 fun draw(){
@@ -30,3 +28,4 @@ fun drawText(){
     textFont("Segoe UI")
     text("p5.js + kotlin", 80.0, 190.0)
 }
+

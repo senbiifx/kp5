@@ -2,7 +2,8 @@
   'use strict';
   var _ = Kotlin.defineRootPackage(null, /** @lends _ */ {
     setup: function () {
-      createCanvas(700.0, 400.0);
+      var c = createCanvas(700.0, 400.0);
+      c.parent('myContainer');
     },
     draw: function () {
       background(255);
