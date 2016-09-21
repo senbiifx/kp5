@@ -2,8 +2,9 @@
   'use strict';
   var _ = Kotlin.defineRootPackage(null, /** @lends _ */ {
     setup: function () {
-      var c = createCanvas(700.0, 400.0);
+      var c = createCanvas(windowWidth, windowHeight);
       c.parent('myContainer');
+      c.style('width:100%; height:100%');
     },
     draw: function () {
       background(255);
@@ -31,7 +32,7 @@
       noStroke();
       textSize(100.0);
       textFont('Segoe UI');
-      text('p5.js + kotlin', 80.0, 190.0);
+      text('p5.js + kotlin', 50.0, 100.0);
     }
   });
   Kotlin.defineModule('kp5', _);
